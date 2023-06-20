@@ -1,0 +1,133 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- back button -->
+      <ion-button slot="start" color="light" routerLink="/tabs/tab2">
+        <ion-back-button></ion-back-button>
+        <ion-icon name="return-left"></ion-icon>
+      </ion-button>
+
+      <button ion-button slot="end"icon-only color="clear" (click)="addNumber()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+
+    <ion-title>Stats</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- <ion-content class="bg" fullscreen> -->
+<ion-content>
+  <table>
+    <tr>
+      <td>
+        <h4>
+          Axes & Greataxes 
+        </h4>
+      </td>
+<!-- Axe statistics for the graph -->
+      <td> 
+        <!-- <ion-list>
+          <ion-item class="usage">
+            Usage: 21%
+          </ion-item>
+          <ion-item  class="dmg">
+            Damage Range: 110 - 203
+          </ion-item>
+          <ion-item *ngFor="let number of data"  class="reqs">
+            <button ion-button icon-only clear (click)="addData()">
+              <ion-icon name="add"></ion-icon>
+            </button>
+            Requirements Range: 10 strength - 50 strength; 10 - 18 Dexterity; {{number}}
+          </ion-item>
+          <ion-item class="scaling">
+            Scaling: Mainly Strength E - B; Dexerity (some) E - D
+          </ion-item>
+        </ion-list> -->
+        <ion-list>
+          <ion-input #fileinput type="file" accept="image/*" (change)="imageSelected(fileInput.files)" multiple></ion-input>
+          <!-- <ion-item>
+              <img scr={{imageFile}}>
+          </ion-item> -->
+          <ion-item-sliding *ngFor="let number of numbers; index as i">
+              <ion-item>
+                <p>{{number}}</p>
+              </ion-item>
+              <ion-item-options side="right">
+                <button ion-button (click)="editNumber(i)">
+                  Edit
+                </button>
+                <button ion-button color="danger" (click)="deleteNumber(i)">
+                  Delete
+                </button>
+              </ion-item-options>
+          </ion-item-sliding>
+        </ion-list>
+      </td>
+    </tr>
+  </table>
+
+  <table>
+      <tr>
+        <td>
+          <h4>
+            Swords & Greatswords
+          </h4>
+        </td>
+<!-- Sword stats for graph -->
+        <td> 
+          <ion-list>
+            <ion-item class="usage">
+              Usage: 68%
+            </ion-item>
+            <ion-item class="dmg">
+              Damage Range: 79 - 138
+            </ion-item>
+            <ion-item class="reqs">
+              Requirements Range: 15 strength - 30 strength; 10 - 20 Dexterity
+            </ion-item>
+            <ion-item class="scaling">
+              Scaling: Strength E - B; Dexerity E - B
+            </ion-item>
+          </ion-list>
+        </td>
+      </tr>
+    </table>
+
+    <table>
+        <tr>
+          <td>
+            <h4>
+              Bows & Greatbows
+            </h4>
+          </td>
+        <!-- stats for Bows for graph-->
+          <td> 
+            <ion-list>
+              <ion-item class="usage">
+                Usage: 11%
+              </ion-item>
+              <ion-item class="dmg">
+                Damage Range: 36 - 145
+              </ion-item>
+              <ion-item class="reqs">
+                Requirements Range: 10 strength - 18 strength; 15 - 30 Dexterity
+              </ion-item>
+              <ion-item class="scaling">
+                Scaling: Strength E - D; Mainly Dexerity D - B
+              </ion-item>
+            </ion-list>
+          </td>
+        </tr>
+      </table>
+
+      <ion-list>
+        <ion-card> Live editable graph
+          <h3>Visualing; Weapon Category vs Usage</h3>
+        </ion-card>
+        <ion-item>
+          <canvas #myChart width="400" height="200"></canvas>
+        </ion-item>
+      </ion-list>
+</ion-content>
+
+<ion-button routerLink="/tabs/tab1" small color="dark">Log Out</ion-button>
+

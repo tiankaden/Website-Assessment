@@ -1,0 +1,32 @@
+<!-- Title -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title text-center> Home </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Customised login message (info from p1) -->
+<h2 text-center >Welcome! {{username}} the {{class}}</h2>
+
+
+<!-- image buttons / links to app content -->
+<ion-content class="card-background-page">
+  <ion-card> <!-- Page 3 image link (To swords) -->
+    <ion-img style="width: stretch; height: auto;" src="../../assets/dancerlong.jpg" 
+    routerLink="/tabs/tab3" ion-button></ion-img>
+    <div class="img-title">Swords & Greatswords</div>
+  </ion-card>
+  <ion-card> <!-- Page 4 image link (To Axes) -->
+      <ion-img style="width: stretch; height: auto;" src="../../assets/greataxe.jpg" 
+      routerLink="/tabs/tab4" ion-button></ion-img>
+      <div class="img-title">Axes & Greataxes</div>
+    </ion-card>
+    <ion-card> <!-- Page 5 image link (To Bows) -->
+        <ion-img style="width: stretch; height: auto;" src="../../assets/greatbowlong.jpg" 
+        routerLink="/tabs/tab5" ion-button></ion-img>
+        <div class="img-title">Bows & Greatbows</div>
+      </ion-card>
+</ion-content>
+
+<!-- flowing logout button -->
+<ion-button routerLink="/tabs/tab1" small color="dark">Log Out</ion-button>

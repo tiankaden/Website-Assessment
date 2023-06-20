@@ -1,0 +1,221 @@
+<ion-header>
+    <ion-toolbar>
+  <!-- Back button -->
+        <ion-button slot="start" color="light" routerLink="/tabs/tab2">
+          <ion-back-button></ion-back-button>
+          <ion-icon name="return-left"></ion-icon>
+        </ion-button>
+  <!-- link to page 6 (stats button / icon)-->
+        <ion-button slot="end" color="light" routerLink="/tabs/tab6">
+          <ion-icon name="stats"></ion-icon>
+        </ion-button>
+  
+      <ion-title>Bows & Greatbows</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list>
+<!-- Pharis bow info -->
+      <ion-item>
+          <table style="width:100%">
+              <tr>
+                 <td>
+                   <ion-card>
+                    <ion-img style="width: auto; height: auto;" src="../../assets/blackbow.jpg" 
+                      routerLink="/tabs/tab3" ion-button>
+                    </ion-img>
+                  </ion-card>
+                  </td>
+                  <td>
+                    <h4>
+                      Black bow of Pharis:  
+                    </h4>
+                  </td>
+                  <td>
+                    <p>
+                        A black longbow named after a hero of old, 
+                        known for the unusual stance from which it is fired.
+                    </p>
+                    <ion-list class="stats">
+                      <ion-item class="base">
+                        - Base Damage: 67
+                      </ion-item>
+                      <ion-item class="crit"> 
+                        - Critical: 100
+                      </ion-item>
+                      <ion-item class="weight">
+                        - Weight: 3
+                      </ion-item>
+                      <ion-item class="scale">
+                          - Dexterity Scaling: C
+                      </ion-item>
+                    </ion-list>
+                  </td>
+              </tr>
+             </table>
+      </ion-item>
+  <!-- Comp bow info-->
+      <ion-item>
+            <table style="width:100%">
+                <tr>
+                   <td>
+                     <ion-card>
+                      <ion-img style="width: auto; height: auto;" src="../../assets/composite.jpg" 
+                        routerLink="/tabs/tab3" ion-button>
+                      </ion-img>
+                    </ion-card>
+                    </td>
+                    <td>
+                      <h4>
+                        Composite Bow:  
+                      </h4>
+                    </td>
+                    <td>
+                      <p>
+                          Composite short bow emphasizing power. Its size allows for quick shots.
+                          Though more powerful than standard bows, it also requires more strength 
+                          of the user, and its range is short.
+                      </p>
+                      <ion-list class="stats">
+                        <ion-item class="base">
+                          - Base Damage: 73
+                        </ion-item>
+                        <ion-item class="crit">
+                          - Critical: 100
+                        </ion-item>
+                        <ion-item class="weight">
+                          - Weight: 3.5
+                        </ion-item>
+                        <ion-item class="scale">
+                            - Strength Scaling: D
+                        </ion-item>
+                      </ion-list>
+                    </td>
+                </tr>
+               </table>
+      </ion-item>
+  <!-- Darkmoon Bow info-->
+      <ion-item>
+          <table style="width:100%">
+              <tr>
+                 <td>
+                   <ion-card>
+                    <ion-img style="width: auto; height: auto;" src="../../assets/Darkmoon.jpg" 
+                      routerLink="/tabs/tab3" ion-button>
+                    </ion-img>
+                  </ion-card>
+                  </td>
+                  <td>
+                    <h4>
+                      Darkmoon Longbow:  
+                    </h4>
+                  </td>
+                  <td>
+                    <p>
+                        Longbow of Darkmoon Gwyndolin, who was gradually devoured by Aldrich.
+                        This golden bow is imbued with powerful magic and is most impressive 
+                        with Moonlight Arrows.
+                    </p>
+                    <ion-list class="stats">
+                      <ion-item class="base">
+                        - Base Damage: 36
+                      </ion-item>
+                      <ion-item class="crit">
+                        - Critical: 100
+                      </ion-item>
+                      <ion-item class="weight">
+                        - Weight: 2.5
+                      </ion-item>
+                      <ion-item class="scale">
+                          - Dexterity Scaling: D
+                      </ion-item>
+                    </ion-list>
+                  </td>
+              </tr>
+             </table>
+      </ion-item>
+  <!-- DS's GB info-->
+      <ion-item>
+          <table style="width:100%">
+              <tr>
+                 <td>
+                   <ion-card>
+                    <ion-img style="width: auto; height: auto;" src="../../assets/greatbow.jpg" 
+                      routerLink="/tabs/tab3" ion-button>
+                    </ion-img>
+                  </ion-card>
+                  </td>
+                  <td>
+                    <h4>
+                      Dragonslayer's Greatbow:  
+                    </h4>
+                  </td>
+                  <td>
+                    <p>
+                        reatbow used by the Dragonslayers during the age of gods. 
+                        Far greater in size than any normal bow, and far more devastating. 
+                    </p>
+                    <ion-list class="stats">
+                      <ion-item class="base">
+                        - Base Damage: 145
+                      </ion-item>
+                      <ion-item class="crit">
+                        - Critical: 100
+                      </ion-item>
+                      <ion-item class="weight">
+                        - Weight: 13
+                      </ion-item>
+                      <ion-item class="scale">
+                          - Strength Scaling: C
+                      </ion-item>
+                    </ion-list>
+                  </td>
+              </tr>
+             </table>
+      </ion-item>
+    <!-- Sniper's Crossbow info-->
+      <ion-item>
+          <table style="width:100%">
+              <tr>
+                 <td>
+                   <ion-card>
+                    <ion-img style="width: auto; height: auto;" src="../../assets/crossbow.jpg" 
+                      routerLink="/tabs/tab3" ion-button>
+                    </ion-img>
+                  </ion-card>
+                  </td>
+                  <td>
+                    <h4>
+                      Sniper's Crossbow:  
+                    </h4>
+                  </td>
+                  <td>
+                    <p>
+                        Long-range heavy crossbow used by Carim snipers.
+                        Its lengthy base makes aiming difficult, 
+                        and accurate usage requires a trained, dexterous hand.
+                    </p>
+                    <ion-list class="stats">
+                      <ion-item class="base">
+                        - Base Damage: 70
+                      </ion-item>
+                      <ion-item class="crit">
+                        - Critical: 100
+                      </ion-item>
+                      <ion-item class="weight">
+                        - Weight: 7.5
+                      </ion-item>
+                      <ion-item class="scale">
+                          - Strength Scaling: No Scaling
+                        </ion-item>
+                    </ion-list>
+                  </td>
+              </tr>
+             </table>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  
+  <!-- Logout -->
+  <ion-button routerLink="/tabs/tab1" small color="dark">Log Out</ion-button>

@@ -1,0 +1,49 @@
+<!-- Headers and title -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title text-center>
+      Login
+    </ion-title>
+  </ion-toolbar>
+  <ion-text color="danger">
+    <h1 text-center >Dark Souls 3</h1>
+    <h4 text-center >Weapons</h4>
+  </ion-text>
+</ion-header>
+
+<!-- Login / User information -->
+<ion-content class="bg" fullscreen>
+<div>
+  <ion-list style='float:left'>
+    <ion-item>
+        <ion-input 
+          type="text" 
+          placeholder ="Character Name" 
+          [(ngModel)] = "username" 
+          name ="username">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input 
+        type="text" 
+        placeholder ="Character Class" 
+        [(ngModel)] ="class" 
+        name ="class">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-checkbox color="dark"></ion-checkbox><ion-label>Keep Name</ion-label>
+    </ion-item>
+  </ion-list>
+  <!-- <ion-item> -->
+    <!-- <ion-label>Date</ion-label>
+    <ion-datetime display-format="MMM DD, YYYY HH:mm"></ion-datetime>
+  </ion-item> -->
+</div>
+<!-- Button -->
+  <ion-button 
+    large 
+    routerLink="/tabs/tab2" 
+    color="danger">
+    Enter!
+  </ion-button>
